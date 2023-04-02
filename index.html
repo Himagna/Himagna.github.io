@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/50c3835a2d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Himagna's resume</title>
     <style>
       :root {
@@ -35,28 +39,128 @@
         margin-left: 3vw;
         color: var(--c4);
       }
-      section {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        /*align-items: center;*/
+      h2 {
+        font-family: "Raleway", sans-serif;
+        font-size: large;
+        text-align: center;
+        margin-left: 3vw;
+        color: var(--c3);
       }
       p {
         margin-left: 1vw;
         margin-right: 1vw;
         color: var(--c5);
       }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .grid-item {
+        padding: 20px;
+        text-align: left;
+      }
+      @media only screen and (max-width: 600px) {
+        .grid-container {
+        grid-template-columns: auto;
+      }
+}
     </style>
   </head>
   <body>
-    <section>
-      <h1>Himagna Mukherjee</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-        voluptatibus eaque voluptas consequatur totam? Rerum, possimus!
-        Voluptate non veritatis commodi, ea, unde laudantium perferendis
-        provident magni, corrupti repellendus nostrum iste.
-      </p>
-    </section>
+    <h1>Himagna Mukherjee</h1>
+    <h2>
+      Pursuing BTech in Information Technology
+      <br />
+      <i class="fa-solid fa-phone"></i>9831350480&nbsp;
+      <i class="fa-solid fa-envelope"></i> himagnam@gmail.com&nbsp;
+      <i class="fa-solid fa-location-dot"></i> 10/129 hudco housing estate, 95
+      ultadanga main road, kolkata - 700054
+    </h2>
+    <hr
+      style="width: 100vw; color: var(--c3); text-align: left; margin-left: 0"
+    />
+    <div class="grid-container">
+      <div class="grid-item">
+        <h2>Profile</h2>
+        <p>
+          A hardworking student with innovative ideas seeking internship in a
+          dynamic organisation that provides continuous challenges and growth
+          prospects, where I hope to contribute significantly to the
+          organisation as well as to keep increasing my knowledge base and
+          skills.
+        </p>
+      </div>
+      <div class="grid-item">
+        <h2>Achievements</h2>
+        <p>
+         <ul>
+          <li> Gold Medal in International Science Olympiad</li>
+          <li> Gold Medal in International English Olympiad </li>
+          <li>Brown Belt in Saishinkai Shito-ryu</li>
+          </ul>
+        </p>
+      </div>
+      <div class="grid-item">
+        <h2>Education</h2>
+        <p>
+          2021-2025
+          <br>
+          Bachelor of Technology
+          <br>
+          Haldia Institute of Technology 
+          <br><br>
+          2020
+          <br>
+          Scored over 90% in ISC
+          <br>
+          Salt Lake School
+          <br><br>
+          2018
+          <br>
+          Scored over 90% in ICSE
+          <br>
+          Salt Lake School
+        </p>
+      </div>
+      <div class="grid-item">
+        <h2>Skills</h2>
+        <p>
+          <ul>
+<li>Web Design</li>
+<li>Design Thinking</li>
+<li>Front End Coding</li>
+<li>Problem-Solving</li>
+<li>Computer Literacy</li>
+<li>Project Management Tools</li>
+<li>Teamwork & Strong Communication</li>
+</ul>
+        </p>
+      </div>
+      <div class="grid-item">
+        <h2>Courses</h2>
+        <p>
+          <ul>
+            <li>Introduction To CSS3, University of Michigan (Coursera)</li>
+            <li>Learn Python Programming Masterclass, (Udemy)</li>
+            <li>Introduction to HTML5, University of Michigan (Coursera)</li>
+            <li>Interactivity with JavaScript, University of Michigan(Coursera)</li>
+            <li>Advanced Styling With Responsive Design, University of Michigan (Coursera)</li>
+            <li>Communication Theory, HSE University (Coursera)</li>
+            <li>Ethical Leadership, University of Virginia (Coursera)</li>
+            <li>Introduction to Philosophy, The University of Edinburgh</li>
+            </ul>
+        </p>
+      </div>
+      <div class="grid-item">
+        <h2>Co-curriculars</h2>
+        <p>
+          <ul>
+            <li>Chess</li>
+            <li>Swimming</li>
+            <li>Karate</li>
+          </ul>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
