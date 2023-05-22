@@ -16,7 +16,7 @@
     <title>Himagna's resume</title>
     <style>
       :root {
-        --c1: #fce9b8;
+        --c1: #f7efdc;
         --c2: #ffbfa0;
         --c3: #5a4958;
         --c4: #182136;
@@ -52,13 +52,17 @@
         margin-right: 1vw;
         color: var(--c5);
       }
-      .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include transition(0.4s);
       }
-      .grid-item {
-        padding: 2vw;
+      .item {
+        padding: 1vw;
         text-align: left;
+        @include transition(0.4s);
       }
       @media only screen and (max-width: 600px) {
         .grid-container {
@@ -90,8 +94,8 @@
     <hr
       style="width: 100vw; color: var(--c3); text-align: left; margin-left: 0"
     />
-    <div class="grid-container">
-      <div class="grid-item">
+    <div class="container">
+      <div class="item">
         <h2>Profile</h2>
         <p>
           A hardworking student with innovative ideas seeking internship in a
@@ -101,7 +105,7 @@
           skills.
         </p>
       </div>
-      <div class="grid-item">
+      <div class="item">
         <h2>Achievements</h2>
         <p>
          <ul>
@@ -111,7 +115,7 @@
           </ul>
         </p>
       </div>
-      <div class="grid-item">
+      <div class="item">
         <h2>Education</h2>
         <p>
           2021-2025
@@ -133,7 +137,7 @@
           Salt Lake School
         </p>
       </div>
-      <div class="grid-item">
+      <div class="item">
         <h2>Skills</h2>
         <p>
           <ul>
@@ -147,7 +151,7 @@
 </ul>
         </p>
       </div>
-      <div class="grid-item">
+      <div class="item">
         <h2>Courses</h2>
         <p>
           <ul>
@@ -162,7 +166,7 @@
             </ul>
         </p>
       </div>
-      <div class="grid-item">
+      <div class="item">
         <h2>Co-curriculars</h2>
         <p>
           <ul>
