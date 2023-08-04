@@ -35,7 +35,7 @@
       }
       h1 {
         font-family: "Playfair Display", serif;
-        font-size: xx-large;
+        
         text-align: left;
         margin-left: 3vw;
         color: var(--c4);
@@ -43,7 +43,6 @@
       h2 {
         font-family: "Raleway", sans-serif;
         font-size: large;
-        text-align: center;
         margin-left: 3vw;
         color: var(--c3);
       }
@@ -51,6 +50,10 @@
         margin-left: 1vw;
         margin-right: 1vw;
         color: var(--c5);
+        font-size: xx-large;
+      }
+      ul{
+        list-style-type: none;
       }
       .container {
         display: flex;
@@ -60,8 +63,10 @@
         @include transition(0.4s);
       }
       .item {
-        padding: 1vw;
+        padding: 2vw;
+        margin: 1vw;
         text-align: left;
+        border-radius: 10%;
         @include transition(0.4s);
       }
       @media only screen and (max-width: 600px) {
@@ -87,6 +92,67 @@
     <hr
       style="width: 100vw; color: var(--c3); text-align: left; margin-left: 0"
     />
+    <h2>Skills:</h2>
+    <div class="container">
+
+      <div class="item">
+        <h2><i class="fa-solid fa-network-wired"></i>&nbsp <a href="https://codepen.io/himagna">Web</a></h2>
+        <p>
+          <ul>
+         <li><i class="fa-brands fa-html5"></i>&nbsp HTML </li>
+         <li><i class="fa-brands fa-css3-alt"></i>&nbsp CSS </li>
+          <li> <i class="fa-brands fa-square-js"></i>&nbsp Javascript</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="item">
+        <h2><i class="fa-solid fa-code"></i>&nbsp Code</h2>
+        <p>
+          <ul>
+         <li><i class="fa-solid fa-c"></i>&nbsp C,C++ </li>
+         <li><i class="fa-brands fa-python"></i>&nbsp Python</li>
+          <li> <i class="fa-brands fa-java"></i>&nbsp Java</li>
+          <li> <i class="fa-solid fa-code"></i>&nbsp OpenCV</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="item">
+        <h2><i class="fa-solid fa-headphones"></i>&nbsp Audio</h2>
+        <p>
+          <ul>
+         <li><i class="fa-solid fa-volume-low"></i>&nbsp Izotope Rx</li>
+         <li><i class="fa-solid fa-volume-low"></i>&nbsp Reaper</li>
+          <li><i class="fa-solid fa-volume-low"></i>&nbsp Audacity</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="item">
+        <h2><i class="fa-solid fa-pencil"></i>&nbsp Design</h2>
+        <p>
+          <ul>
+         <li><i class="fa-solid fa-image"></i>&nbsp Photoshop</li>
+         <li><i class="fa-brands fa-figma"></i>&nbsp Figma</li>
+          <li><i class="fa-solid fa-paintbrush"></i>&nbsp IbisPaint X</li>
+          <li><i class="fa-solid fa-compass-drafting"></i>&nbsp GLSL Shaders</li>
+          <li><i class="fa-regular fa-face-smile"></i>&nbsp MetaSpark studio</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="item">
+        <h2><i class="fa-solid fa-ellipsis"></i>&nbsp ETC</h2>
+        <p>
+          <ul>
+         <li><i class="fa-brands fa-unity"></i>&nbsp Unity</li>
+         <li><i class="fa-solid fa-cube"></i>&nbsp Blender</li>
+          </ul>
+        </p>
+      </div>
+
+    </div>
 
     <!--<div class="spacer layer1"></div>-->
   </body>
