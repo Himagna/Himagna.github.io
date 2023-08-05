@@ -31,7 +31,9 @@
       body {
         margin: 0;
         font-family: "Raleway", sans-serif;
-        background: var(--c1);
+        background-image: url(layeredWaves.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       h1 {
         font-family: "Playfair Display", serif;
@@ -50,24 +52,34 @@
         margin-left: 1vw;
         margin-right: 1vw;
         color: var(--c5);
-        font-size: xx-large;
+        font-size:large;
       }
       ul{
         list-style-type: none;
+        padding: 0; 
+        margin: 0;
       }
       .container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         align-items: flex-start;
-        @include transition(0.4s);
+       
       }
       .item {
         padding: 2vw;
         margin: 1vw;
         text-align: left;
-        border-radius: 10%;
-        @include transition(0.4s);
+        color: var(--c5);
+        font-size:large;
+
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
       }
       @media only screen and (max-width: 600px) {
         .grid-container {
@@ -114,6 +126,7 @@
          <li><i class="fa-brands fa-python"></i>&nbsp Python</li>
           <li> <i class="fa-brands fa-java"></i>&nbsp Java</li>
           <li> <i class="fa-solid fa-code"></i>&nbsp OpenCV</li>
+          <li><i class="fa-solid fa-microchip"></i>&nbsp Verilog</li>
           </ul>
         </p>
       </div>
