@@ -33,7 +33,9 @@
         padding:1vw ;
         font-family: "Raleway", sans-serif;
         background-image: url(layeredWaves.svg);
-        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 0 0;
+        background-repeat:no-repeat;
         background-size: cover;
       }
       h1 {
@@ -48,6 +50,9 @@
         font-size: large;
         color: var(--c3);
       }
+      hr{
+        color: var(--c3); 
+      }
       p {
         margin-left: 1vw;
         margin-right: 1vw;
@@ -58,6 +63,7 @@
         list-style-type: none;
         padding: 0; 
         margin: 0;
+        text-align: left;
       }
       .container {
         display: flex;
@@ -69,7 +75,7 @@
       .item {
         padding: 2vw;
         margin: 1vw;
-        text-align: left;
+        text-align: center;
         color: var(--c5);
         font-size:large;
 
@@ -79,31 +85,21 @@
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+        transition: all 0.2s ease-in-out;
+      }
+      .item:hover{
+        flex-grow: 0.1;
       }
       @media only screen and (max-width: 600px) {
         .grid-container {
           grid-template-columns: auto;
         }
-        /*.spacer{
-        aspect-ratio: 960/300;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      .layer1{
-        background-image: url("layeredWaves.svg");
-      }*/
       }
     </style>
   </head>
   <body>
     <h1>Himagna Mukherjee</h1>
-    <h2>Currently I am Pursuing BTech in Information Technology</h2>
-    <hr
-      style="width: 100vw; color: var(--c3); text-align: left; margin-left: 0"
-    />
+    <hr/>
     <h2>Skills:</h2>
     <div class="container">
 
@@ -167,6 +163,32 @@
 
     </div>
 
-    <!--<div class="spacer layer1"></div>-->
+  <h2>Eductaion:</h2>
+    <div class="container">
+
+      <div class="item">
+        <h2> BTech</h2>
+        <h3>Haldia Institute of Technology</h3>
+        <p>
+          Currently pursuing.
+        </p>
+      </div>
+
+      <div class="item">
+        <h2>ISC</h2>
+        <h3>Salt Lake School</h3>
+        <p>
+          Scored over 90%
+        </p>
+      </div>
+
+      <div class="item">
+        <h2>ICSE</h2>
+        <h3>Salt Lake School</h3>
+        <p>
+          Scored over 90%
+        </p>
+      </div>
+    </div>
   </body>
 </html>
